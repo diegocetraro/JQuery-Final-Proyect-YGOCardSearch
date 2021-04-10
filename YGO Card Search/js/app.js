@@ -75,7 +75,7 @@ class NonMonsterCard{
         this.cardData.type.text(this.type)
         this.cardData.race.text(this.race)
         this.cardData.description.text(this.description)
-        this.cardData.image.html(`<img class="js-image" src="${this.image}" alt="card">`)
+        this.cardData.image.attr('src',`${this.image}`)
     }
 }
 
@@ -113,7 +113,7 @@ class MonsterCard{
         this.cardData.race.text(this.race)
         this.cardData.attribute.text(this.attribute)
         this.cardData.description.text(this.description)
-        this.cardData.image.html(`<img class="js-image" src="${this.image}" alt="card">`)
+        this.cardData.image.attr('src',`${this.image}`)
     }
 }
 

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $('.js-button-search').on('click', function(){
-        let random_number = Math.round(Math.random()*100)
+        let random_number = Math.ceil(Math.random()*100)
         console.log(random_number)
         $.get(`https://swapi.dev/api/people/${random_number}/`, function(data){
             $('.js-name').text(`Name: ${data['name']}`)
